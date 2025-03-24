@@ -1,0 +1,157 @@
+[gd_scene load_steps=15 format=3 uid="uid://db2h3t17k37pe"]
+
+[ext_resource type="Texture2D" uid="uid://dpvrqepybkp5h" path="res://Materials/thomas-stewart-cyber-ground-metalic.jpg" id="1_0duqc"]
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_1d73w"]
+[ext_resource type="Texture2D" uid="uid://6h16468y48id" path="res://Asset/Skybox/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="2_do6lf"]
+[ext_resource type="Script" path="res://Scripts/sway.gd" id="4_777lv"]
+[ext_resource type="PackedScene" uid="uid://dsnvw30f4770b" path="res://Scenes/fp_arms.tscn" id="4_me3bo"]
+[ext_resource type="Script" path="res://Scripts/reticle.gd" id="6_aoo1y"]
+[ext_resource type="Script" path="res://Scripts/top.gd" id="7_5j5va"]
+[ext_resource type="Script" path="res://Scripts/fps.gd" id="8_goenx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sroov"]
+albedo_color = Color(0.617455, 0.617455, 0.617455, 1)
+albedo_texture = ExtResource("1_0duqc")
+metallic = 0.63
+uv1_triplanar = true
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7ub1k"]
+panorama = ExtResource("2_do6lf")
+
+[sub_resource type="Sky" id="Sky_f6bkd"]
+sky_material = SubResource("PanoramaSkyMaterial_7ub1k")
+
+[sub_resource type="Environment" id="Environment_g2h84"]
+background_mode = 2
+sky = SubResource("Sky_f6bkd")
+tonemap_mode = 2
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 1.09
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.744356, 0.769036, 0.807818, 1)
+volumetric_fog_emission_energy = 0.0
+volumetric_fog_length = 0.01
+volumetric_fog_detail_spread = 6.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_xc2g5"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wydro"]
+
+[node name="World" type="Node3D"]
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Map"]
+use_collision = true
+size = Vector3(52.236, 1, 59.575)
+material = SubResource("StandardMaterial3D_sroov")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 3, 0)
+use_collision = true
+size = Vector3(52.236, 1, 59.575)
+material = SubResource("StandardMaterial3D_sroov")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, -35, -57)
+use_collision = true
+size = Vector3(52.236, 1, 59.575)
+material = SubResource("StandardMaterial3D_sroov")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Map"]
+environment = SubResource("Environment_g2h84")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Map"]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0343441, -24)
+script = ExtResource("1_1d73w")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47469, 0)
+mesh = SubResource("CapsuleMesh_xc2g5")
+
+[node name="standing_collison" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.475, 0)
+shape = SubResource("CapsuleShape3D_wydro")
+
+[node name="crouching_collisons" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.6, 0, 0, 0, 1, 0, 1.1, 0)
+shape = SubResource("CapsuleShape3D_wydro")
+
+[node name="RayCast3D" type="RayCast3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92876, 0)
+target_position = Vector3(0, 3, 0)
+
+[node name="neck" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3, 0)
+
+[node name="Head" type="Node3D" parent="Player/neck"]
+
+[node name="eyes" type="Node3D" parent="Player/neck/Head"]
+
+[node name="Camera3D" type="Camera3D" parent="Player/neck/Head/eyes"]
+
+[node name="sway" type="Node3D" parent="Player/neck/Head/eyes/Camera3D"]
+transform = Transform3D(-1.39, 8.2693e-09, -2.09721e-07, 0, 1.38892, 0.0547651, 2.09884e-07, 0.0547651, -1.38892, -1.63956e-09, -0.275382, -0.0108583)
+script = ExtResource("4_777lv")
+swayLeft = Vector3(0, 0.2, 0)
+swayRight = Vector3(0, -0.2, 0)
+swayUp = Vector3(-0.2, 0, 0)
+swayDown = Vector3(0.2, 0, 0)
+
+[node name="Arms" parent="Player/neck/Head/eyes/Camera3D/sway" instance=ExtResource("4_me3bo")]
+
+[node name="UI" type="Control" parent="Player"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Reticle" type="CenterContainer" parent="Player/UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_aoo1y")
+Dot_Radius = 2.05
+
+[node name="Top" type="Line2D" parent="Player/UI/Reticle"]
+points = PackedVector2Array(0, -5, 0, -20)
+width = 2.0
+script = ExtResource("7_5j5va")
+
+[node name="Right" type="Line2D" parent="Player/UI/Reticle"]
+points = PackedVector2Array(5, 0, 20, 0)
+width = 2.0
+
+[node name="Bottom" type="Line2D" parent="Player/UI/Reticle"]
+points = PackedVector2Array(0, 5, 0, 20)
+width = 2.0
+
+[node name="Left" type="Line2D" parent="Player/UI/Reticle"]
+points = PackedVector2Array(-5, 0, -20, 0)
+width = 2.0
+
+[node name="FPS" type="Label" parent="Player/UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+horizontal_alignment = 2
+script = ExtResource("8_goenx")
+color = Color(0.961327, 1.92523e-07, 0.502732, 1)
+Font_Size = 40

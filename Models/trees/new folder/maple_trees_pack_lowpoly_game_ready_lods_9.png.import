@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bi7j6w62tdn01"
+path.s3tc="res://.godot/imported/maple_trees_pack_lowpoly_game_ready_lods_9.png-f35a66c07d2a2c1a2a6427a79fb6b609.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "473b4ed2b040db33a68da5c14ed3324a"
+}
+
+[deps]
+
+source_file="res://Models/trees/new folder/maple_trees_pack_lowpoly_game_ready_lods_9.png"
+dest_files=["res://.godot/imported/maple_trees_pack_lowpoly_game_ready_lods_9.png-f35a66c07d2a2c1a2a6427a79fb6b609.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Models/trees/new folder/maple_trees_pack_lowpoly_game_ready_lods_9.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
