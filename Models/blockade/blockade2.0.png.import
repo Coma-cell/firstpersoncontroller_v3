@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b66dm3whkeydn"
 path.s3tc="res://.godot/imported/blockade2.0.png-0b69332cafc5ce110f9c71d6ab98ed40.s3tc.ctex"
+path.etc2="res://.godot/imported/blockade2.0.png-0b69332cafc5ce110f9c71d6ab98ed40.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Models/blockade/blockade2.0.png"
-dest_files=["res://.godot/imported/blockade2.0.png-0b69332cafc5ce110f9c71d6ab98ed40.s3tc.ctex"]
+dest_files=["res://.godot/imported/blockade2.0.png-0b69332cafc5ce110f9c71d6ab98ed40.s3tc.ctex", "res://.godot/imported/blockade2.0.png-0b69332cafc5ce110f9c71d6ab98ed40.etc2.ctex"]
 
 [params]
 

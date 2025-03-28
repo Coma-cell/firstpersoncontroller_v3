@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddj3rnmo1qmme"
 path.s3tc="res://.godot/imported/maple_trees_pack_lowpoly_game_ready_lods_10.png-d8d6d8eb242f0327a0db987951a26ba2.s3tc.ctex"
+path.etc2="res://.godot/imported/maple_trees_pack_lowpoly_game_ready_lods_10.png-d8d6d8eb242f0327a0db987951a26ba2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Models/trees/new folder/maple_trees_pack_lowpoly_game_ready_lods_10.png"
-dest_files=["res://.godot/imported/maple_trees_pack_lowpoly_game_ready_lods_10.png-d8d6d8eb242f0327a0db987951a26ba2.s3tc.ctex"]
+dest_files=["res://.godot/imported/maple_trees_pack_lowpoly_game_ready_lods_10.png-d8d6d8eb242f0327a0db987951a26ba2.s3tc.ctex", "res://.godot/imported/maple_trees_pack_lowpoly_game_ready_lods_10.png-d8d6d8eb242f0327a0db987951a26ba2.etc2.ctex"]
 
 [params]
 
