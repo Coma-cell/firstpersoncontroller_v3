@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="FPSController"
+config/name="someting_horror"
 run/main_scene="res://Scenes/GAME.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
@@ -94,6 +94,11 @@ common/physics_ticks_per_second=144
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
 textures/vram_compression/import_etc2_astc=true
+camera/depth_of_field/depth_of_field_bokeh_quality=0
+scaling_3d/mode=2
+scaling_3d/scale=0.65
+scaling_3d/fsr_sharpness=0.3
+environment/volumetric_fog/use_filter=0
 anti_aliasing/quality/screen_space_aa=1
+occlusion_culling/use_occlusion_culling=true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=4 uid="uid://cxr3cvtsbq3wc"]
+[gd_scene load_steps=91 format=4 uid="uid://cxr3cvtsbq3wc"]
 
 [ext_resource type="Script" path="res://Scenes/game_graphics.gd" id="1_1h5yw"]
 [ext_resource type="Texture2D" uid="uid://6h16468y48id" path="res://Asset/Skybox/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="7_xmlgw"]
@@ -7,37 +7,32 @@
 [ext_resource type="Texture2D" uid="uid://wit6wbgvycv0" path="res://Materials/Cement floor/concrete_0010_color_4k.jpg" id="11_xa55m"]
 [ext_resource type="Texture2D" uid="uid://rdvsj0b3ax48" path="res://Materials/Cement floor/concrete_0010_ao_4k.jpg" id="12_heath"]
 [ext_resource type="Texture2D" uid="uid://deru52obof0hp" path="res://Models/fence/chain_link_fence_low_poly_version_0.png" id="13_2exly"]
-[ext_resource type="Script" path="res://Scripts/reticle.gd" id="13_gocot"]
 [ext_resource type="Texture2D" uid="uid://davlicvthyd2d" path="res://Materials/Cement floor/concrete_0010_height_4k.png" id="13_w8ssh"]
 [ext_resource type="Texture2D" uid="uid://bupoudbpru6k4" path="res://Models/fence/chain_link_fence_low_poly_version_1.png" id="14_e61hh"]
-[ext_resource type="Script" path="res://Scripts/top.gd" id="14_ea0cd"]
 [ext_resource type="Texture2D" uid="uid://jp33wegmxgm8" path="res://Materials/Cement floor/concrete_0010_normal_opengl_4k.png" id="14_nc85o"]
 [ext_resource type="Shader" path="res://Scenes/frosty_glass.gdshader" id="14_nexvu"]
 [ext_resource type="Texture2D" uid="uid://cjtlfqknojrx4" path="res://Models/fence/chain_link_fence_low_poly_version_2.png" id="15_655ht"]
 [ext_resource type="Script" path="res://Scripts/fps.gd" id="15_ro2xx"]
 [ext_resource type="Texture2D" uid="uid://7l6kdw23l0lv" path="res://Materials/Cement floor/concrete_0010_roughness_4k.jpg" id="15_wte1w"]
-[ext_resource type="Shader" path="res://Scenes/grass_sway.gdshader" id="16_1fm53"]
 [ext_resource type="Texture2D" uid="uid://dh3kaquiyl2vp" path="res://Materials/wet_ground/ground_0001_color_1k.jpg" id="16_1god0"]
-[ext_resource type="Texture2D" uid="uid://dgfjd3v2wra6x" path="res://Asset/foliage/m_grass/gras_plants_0003_color_1k-plants_0003_opacity_1k.png" id="16_r1gwo"]
 [ext_resource type="Texture2D" uid="uid://8fc6bg81s0b7" path="res://Models/fence/chain_link_fence_low_poly_version_3.png" id="16_wc6in"]
 [ext_resource type="Texture2D" uid="uid://bygabu1dn5rd5" path="res://Models/fence/chain_link_fence_low_poly_version_4.png" id="17_1mq8v"]
 [ext_resource type="Texture2D" uid="uid://b4dheqsi0xwki" path="res://Materials/wet_ground/ground_0001_ao_1k.jpg" id="17_6fe8r"]
-[ext_resource type="Texture2D" uid="uid://bpuvd7i3qshlb" path="res://Asset/foliage/m_grass/gras_plants_0003_roughness_1k.png" id="17_i64wb"]
-[ext_resource type="Script" path="res://Scenes/film_grain_noise.gd" id="17_mftna"]
 [ext_resource type="Texture2D" uid="uid://cu4ijxln82t0w" path="res://Models/Arm/fp_arms_0.png" id="17_w67np"]
 [ext_resource type="Texture2D" uid="uid://dn2w3224apkri" path="res://Models/fence/chain_link_fence_low_poly_version_5.png" id="18_3rou7"]
 [ext_resource type="Texture2D" uid="uid://bjk31ltibbsws" path="res://Materials/wet_ground/ground_0001_height_1k.png" id="18_f5d3k"]
 [ext_resource type="Texture2D" uid="uid://bis81gis4tjin" path="res://Models/Arm/fp_arms_1.png" id="18_jyouc"]
-[ext_resource type="Texture2D" uid="uid://b77bycrr3ubdo" path="res://Asset/foliage/m_grass/gras_plants_0003_normal_opengl_1k.png" id="18_p3p55"]
 [ext_resource type="Texture2D" uid="uid://c0cnnbq3ok1ye" path="res://Models/Arm/fp_arms_2.png" id="19_vomj0"]
 [ext_resource type="Texture2D" uid="uid://b36rkmghtaort" path="res://Materials/wet_ground/ground_0001_normal_opengl_1k.png" id="19_xctiy"]
 [ext_resource type="Texture2D" uid="uid://brkqms0cus7j4" path="res://Materials/wet_ground/ground_0001_roughness_1k.jpg" id="20_bf23h"]
 [ext_resource type="Shader" path="res://Scenes/Water.gdshader" id="20_btx2h"]
 [ext_resource type="PackedScene" uid="uid://30rtds7l7xin" path="res://Models/Flash_light/flashlight.glb" id="21_64fhk"]
+[ext_resource type="Texture2D" uid="uid://ce87ecyjwagkw" path="res://Asset/foliage/grass_project_plants_0003_color_1k-plants_0003_opacity_1k.png" id="21_gl032"]
+[ext_resource type="Texture2D" uid="uid://dcceae8n1bnch" path="res://Asset/foliage/grass_project_plants_0003_roughness_1k.png" id="22_kg134"]
+[ext_resource type="Texture2D" uid="uid://bt0mqkksmcn1a" path="res://Asset/foliage/grass_project_plants_0003_normal_opengl_1k.png" id="23_1j8tf"]
 [ext_resource type="Script" path="res://Scenes/arms.gd" id="23_hupdc"]
 [ext_resource type="Texture2D" uid="uid://cqrglx67mdi8" path="res://Asset/flashlight_projertor/t_flashlightpattern.png" id="28_dkoab"]
 [ext_resource type="AnimationLibrary" uid="uid://ckph0548qo1yu" path="res://Asset/fps.res" id="28_nsf1i"]
-[ext_resource type="Texture2D" uid="uid://dxsgsc7bqux1p" path="res://Asset/Fish_eye/fish_eye (2).png" id="34_afqhu"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7ub1k"]
 panorama = ExtResource("7_xmlgw")
@@ -64,24 +59,18 @@ ssao_horizon = 0.21
 ssao_light_affect = 0.1
 sdfgi_use_occlusion = true
 sdfgi_read_sky_light = false
-sdfgi_bounce_feedback = 1.99
-sdfgi_cascades = 8
-sdfgi_min_cell_size = 64.0002
-sdfgi_cascade0_distance = 4096.02
-sdfgi_max_distance = 1.04858e+06
-glow_enabled = true
 fog_enabled = true
 fog_mode = 1
 fog_light_energy = 0.36
-fog_density = 0.4895
+fog_density = 0.4295
 fog_aerial_perspective = 0.503
 fog_height = 296.42
 fog_height_density = -12.0894
-fog_depth_curve = 0.0980734
+fog_depth_curve = 0.105112
 fog_depth_begin = 1.0
 fog_depth_end = 4000.0
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.0315
+volumetric_fog_density = 0.0105
 volumetric_fog_albedo = Color(0.851769, 0.851769, 0.851769, 1)
 volumetric_fog_emission_energy = 0.0
 volumetric_fog_gi_inject = 0.95
@@ -91,36 +80,8 @@ volumetric_fog_detail_spread = 6.0
 volumetric_fog_ambient_inject = 1.03
 volumetric_fog_temporal_reprojection_enabled = false
 volumetric_fog_temporal_reprojection_amount = 0.57
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_k4u18"]
-fractal_type = 2
-fractal_weighted_strength = 1.0
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1xob7"]
-noise = SubResource("FastNoiseLite_k4u18")
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_8jlij"]
-fractal_type = 3
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2lljt"]
-noise = SubResource("FastNoiseLite_8jlij")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_6qxdd"]
-render_priority = 0
-shader = ExtResource("20_btx2h")
-shader_parameter/water_color = Color(0.948566, 0.830427, 0.9427, 1)
-shader_parameter/time_scale = 4.5
-shader_parameter/UV_scale = 5.0
-shader_parameter/abberation_r = Vector2(0.009, 0)
-shader_parameter/abberation_g = Vector2(-0.005, 0)
-shader_parameter/abberation_b = Vector2(-0.057, 0)
-shader_parameter/time_scale_highlight = 0.005
-shader_parameter/normal = 0.5
-shader_parameter/roughness = 0.25
-shader_parameter/water_normal_noise = SubResource("NoiseTexture2D_2lljt")
-shader_parameter/sun_highlight = SubResource("NoiseTexture2D_1xob7")
-
-[sub_resource type="SphereMesh" id="SphereMesh_o6o2g"]
+adjustment_enabled = true
+adjustment_brightness = 2.3
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_w4g4i"]
 fractal_type = 2
@@ -243,8 +204,6 @@ _surfaces = [{
 blend_shape_mode = 0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_d4b4m"]
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_sctps"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_6modu"]
 
@@ -448,16 +407,17 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_28ckh")
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_1io00"]
-frequency = 0.017
+frequency = 0.0355
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_bfh1i"]
 noise = SubResource("FastNoiseLite_1io00")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vi2yg"]
-albedo_color = Color(0.255659, 0.255659, 0.255659, 1)
+albedo_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+albedo_texture = ExtResource("11_xa55m")
 metallic = 1.0
 metallic_texture = SubResource("NoiseTexture2D_bfh1i")
-roughness = 0.63
+roughness = 0.75
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -500,53 +460,49 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_hjjvm")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ghjcc"]
-render_priority = 0
-shader = ExtResource("16_1fm53")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dd2ry"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4707g"]
 resource_name = "Material.001"
 transparency = 4
 cull_mode = 2
-albedo_texture = ExtResource("16_r1gwo")
-metallic_texture = ExtResource("17_i64wb")
+albedo_texture = ExtResource("21_gl032")
+metallic_texture = ExtResource("22_kg134")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("17_i64wb")
+roughness_texture = ExtResource("22_kg134")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("18_p3p55")
+normal_texture = ExtResource("23_1j8tf")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_77lmg"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_xq86s"]
 _surfaces = [{
-"aabb": AABB(-1.51787, -0.150221, -1.16662, 3.35486, 0.286853, 2.23741),
+"aabb": AABB(-12.6912, -1.12336, -11.3622, 25.3825, 2.24672, 14.3464),
 "format": 34896613377,
-"index_count": 24,
-"index_data": PackedByteArray("AgABAAMAAgAAAAEABgAFAAQABgAHAAUACgAJAAgACgALAAkADgANAA8ADgAMAA0A"),
+"index_count": 12,
+"index_data": PackedByteArray("AAADAAEAAAACAAMABwAEAAYABwAFAAQA"),
 "name": "Material.001",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 16,
-"vertex_data": PackedByteArray("MBQPhgAAAAD//w+GtTcAAAAAD4YgwAAAzusPhtb3AADrUWzlCQIAAI1ZAAAjRAAAnWf//+S9AAA/b5Ia//8AAMHDddwiEgAA4yP1NiISAADBw3XcodQAAOMj9Tah1AAAj8XvMyISAADCHK3iIhIAAI/F7zOh1AAAwhyt4qHUAAA=")
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD/f/7/AAD///9//v8AAAAA/38AAAAA////fwAAAAD/f/7/AAAAAP9/AAAAAAAA/3////7/AAD/fwAA//8AAA==")
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_af7pu"]
-resource_name = "gras_Plane"
+[sub_resource type="ArrayMesh" id="ArrayMesh_i4wjg"]
+resource_name = "grass_project_Plane"
 _surfaces = [{
-"aabb": AABB(-1.51787, -0.150221, -1.16662, 3.35486, 0.286853, 2.23741),
-"attribute_data": PackedByteArray("AAAAAP//AAAAAJbZ//+W2QAAAAD//wAAAACW2f//ltkAAAAA//8AAAAAltn//5bZAAAAAP//AAAAAJbZ//+W2Q=="),
+"aabb": AABB(-12.6912, -1.12336, -11.3622, 25.3825, 2.24672, 14.3464),
+"attribute_data": PackedByteArray("AAD///////8AAAAA//8AAP//AAAAAAAA/////wAA//8="),
 "format": 34896613399,
-"index_count": 24,
-"index_data": PackedByteArray("AgABAAMAAgAAAAEABgAFAAQABgAHAAUACgAJAAgACgALAAkADgANAA8ADgAMAA0A"),
-"material": SubResource("StandardMaterial3D_dd2ry"),
+"index_count": 12,
+"index_data": PackedByteArray("AAADAAEAAAACAAMABwAEAAYABwAFAAQA"),
+"material": SubResource("StandardMaterial3D_4707g"),
 "name": "Material.001",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 16,
-"vertex_data": PackedByteArray("MBQPhgAAPsD//w+GtTc+wAAAD4YgwD7AzusPhtb3PsDrUWzlCQL0RI1ZAAAjRPREnWf//+S99EQ/b5Ia///0RMHDddwiEosC4yP1NiISiwLBw3XcodSLAuMj9Tah1IsCj8XvMyISc/3CHK3iIhJz/Y/F7zOh1HP9whyt4qHUc/2q7qmIqu6piKruqYiq7qmImm3A15ptwNeabcDXmm3A1zt9nb47fZ2+O32dvjt9nb5hwTr9YcE6/WHBOv1hwTr9")
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD/f/7//7////9//v//vwAA/38AAP+/////fwAA/7//f/7/AABU1f9/AAAAAFTV/3////7/VNX/fwAA//9U1f///3////9/////f////39U1VTVVNVU1VTVVNVU1VTV")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_77lmg")
+shadow_mesh = SubResource("ArrayMesh_xq86s")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_xc2g5"]
 
@@ -773,23 +729,6 @@ nodes/idle_to_walk/node = SubResource("AnimationNodeBlend2_7usah")
 nodes/idle_to_walk/position = Vector2(120, 40)
 node_connections = [&"idle_to_walk", 0, &"Animation", &"idle_to_walk", 1, &"Animation 2", &"output", 0, &"idle_to_walk"]
 
-[sub_resource type="Gradient" id="Gradient_k3mvi"]
-offsets = PackedFloat32Array(0.850847, 1)
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_npop2"]
-frequency = 0.182
-fractal_type = 3
-fractal_octaves = 1
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_rktlo"]
-width = 1920
-height = 1080
-generate_mipmaps = false
-seamless = true
-seamless_blend_skirt = 1.0
-color_ramp = SubResource("Gradient_k3mvi")
-noise = SubResource("FastNoiseLite_npop2")
-
 [node name="World" type="Node3D"]
 script = ExtResource("1_1h5yw")
 
@@ -805,29 +744,8 @@ spot_angle = 54.26
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Map"]
 environment = SubResource("Environment_g2h84")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="Map"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56835, 1.66428, -5.53298)
-material_override = SubResource("ShaderMaterial_6qxdd")
-mesh = SubResource("SphereMesh_o6o2g")
-
 [node name="Water" type="MeshInstance3D" parent="Map"]
 transform = Transform3D(20.8745, 5.60363, -13.9509, -5.59055, 25.0527, 1.69785, 13.9562, 1.6541, 21.5467, -30.8754, 4.03919, -2.89087)
-material_override = SubResource("ShaderMaterial_ijp6o")
-material_overlay = SubResource("StandardMaterial3D_kxytw")
-lod_bias = 0.001
-mesh = SubResource("PlaneMesh_2gtus")
-skeleton = NodePath("../..")
-
-[node name="Water2" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(21.2322, -14.4269, -1.68294, 14.5105, 21.2005, 1.3268, 0.642866, -2.04436, 25.6356, 47.7278, 24.7592, -4.69153)
-material_override = SubResource("ShaderMaterial_ijp6o")
-material_overlay = SubResource("StandardMaterial3D_kxytw")
-lod_bias = 0.001
-mesh = SubResource("PlaneMesh_2gtus")
-skeleton = NodePath("../..")
-
-[node name="Water3" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(-22.6674, -8.72962, -8.47091, 0.134196, 17.7342, -18.6349, 12.1632, -16.4642, -15.5808, 32.7507, 35.9168, 19.8716)
 material_override = SubResource("ShaderMaterial_ijp6o")
 material_overlay = SubResource("StandardMaterial3D_kxytw")
 lod_bias = 0.001
@@ -837,6 +755,7 @@ skeleton = NodePath("../..")
 [node name="Fence2" type="Node3D" parent="Map"]
 transform = Transform3D(0.00471341, 0, -0.00166846, 0, 0.006, 0, 0.00166846, 0, 0.00471341, -5.36831, -0.0953526, -17.6765)
 top_level = true
+visible = false
 
 [node name="Brackets_low" type="Node3D" parent="Map/Fence2"]
 transform = Transform3D(10, 0, 0, 0, -1.62921e-06, 10, 0, -10, -1.62921e-06, 8.88178e-14, -2.38419e-05, 0)
@@ -867,16 +786,6 @@ transform = Transform3D(712.995, 0, 0, 0, -1.65496e-05, 284.265, 0, -378.61, -1.
 visible = false
 use_collision = true
 mesh = SubResource("PlaneMesh_d4b4m")
-
-[node name="CSGMesh3D" type="CSGMesh3D" parent="Map"]
-transform = Transform3D(17.365, 0, 0, 0, 17.365, 0, 0, 0, 17.365, 3.47363, 0.343917, -17.1886)
-use_collision = true
-mesh = SubResource("PlaneMesh_sctps")
-
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="Map"]
-transform = Transform3D(0.981286, 0.192556, 0, -0.00349834, 0.0178279, 0.999835, 0.192524, -0.981124, 0.0181679, 2.46275, 2.03721, -6.49968)
-mesh = SubResource("PlaneMesh_6modu")
-material = SubResource("ShaderMaterial_nj0lk")
 
 [node name="CSGMesh3D4" type="CSGMesh3D" parent="Map"]
 transform = Transform3D(0.991241, 0.132067, 9.31323e-10, -0.00239933, 0.0180088, 0.999835, 0.132044, -0.991077, 0.0181679, 0.842432, 2.12307, -6.85082)
@@ -910,30 +819,30 @@ surface_material_override/0 = SubResource("StandardMaterial3D_kmqag")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/tunnel/floor/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ydovo")
 
-[node name="lamp2" type="Node3D" parent="Map"]
-transform = Transform3D(0.225, 0, 0, 0, 0.225, 0, 0, 0, 0.225, 6.00343, 6.16149, -13.0683)
+[node name="lamp2" type="Node3D" parent="Map/tunnel"]
+transform = Transform3D(0.0515697, 0, 0.0224639, 0, 0.05625, 0, -0.0224639, 0, 0.0515697, 10.9891, 0.702855, 10.7507)
 
-[node name="bulb" type="MeshInstance3D" parent="Map/lamp2"]
+[node name="bulb" type="MeshInstance3D" parent="Map/tunnel/lamp2"]
 transform = Transform3D(264.849, 0, 0, 0, -3.15725e-05, 100, 0, -264.849, -1.19209e-05, 0, 0.968513, 0)
 mesh = SubResource("ArrayMesh_s70th")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_mtrmc")
 
-[node name="lamp" type="MeshInstance3D" parent="Map/lamp2"]
+[node name="lamp" type="MeshInstance3D" parent="Map/tunnel/lamp2"]
 transform = Transform3D(264.849, 0, 0, 0, -3.15725e-05, 100, 0, -264.849, -1.19209e-05, 0, 0.968513, 0)
 mesh = SubResource("ArrayMesh_d1evi")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_vi2yg")
 
-[node name="lamp_001" type="MeshInstance3D" parent="Map/lamp2"]
+[node name="lamp_001" type="MeshInstance3D" parent="Map/tunnel/lamp2"]
 transform = Transform3D(264.849, 0, 0, 0, -3.15725e-05, 100, 0, -264.849, -1.19209e-05, 0, 0.968513, 0)
 mesh = SubResource("ArrayMesh_sw1p2")
 skeleton = NodePath("")
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Map/lamp2"]
+[node name="SpotLight3D" type="SpotLight3D" parent="Map/tunnel/lamp2"]
 transform = Transform3D(1, 0, 0, 0, 4.47035e-08, 1, 0, -1, 4.47035e-08, 0.0426636, 0.739041, 0.102789)
 light_color = Color(0.986754, 0.906718, 0.826099, 1)
-light_energy = 0.913
+light_energy = 6.329
 light_size = 0.489
 light_specular = 0.14
 distance_fade_begin = 0.0
@@ -941,27 +850,28 @@ spot_range = 19.406
 spot_angle = 52.83
 spot_angle_attenuation = 5.46416
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Map/lamp2"]
+[node name="OmniLight3D" type="OmniLight3D" parent="Map/tunnel/lamp2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1011, -0.327265, 0)
 light_energy = 0.05
 
-[node name="grass" type="Node3D" parent="Map"]
-transform = Transform3D(0.285, 0, 0, 0, 0.975, 0, 0, 0, 0.055, 1.16452, 0, -10.8843)
+[node name="foliage" type="Node3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.90578, 0.296144, -12.3405)
 
-[node name="Plane" type="MeshInstance3D" parent="Map/grass"]
-transform = Transform3D(-5.35421e-07, 27.87, -3.75481e-08, 0, -1.21824e-06, -0.859, -12.249, -1.21824e-06, 1.64128e-15, 1.86491, 0.73968, -12.7886)
-material_overlay = SubResource("ShaderMaterial_ghjcc")
-mesh = SubResource("ArrayMesh_af7pu")
+[node name="grass" type="MeshInstance3D" parent="Map/foliage"]
+transform = Transform3D(-4.10887e-09, 1.065, -4.10887e-09, 0, -4.65526e-08, -0.094, -0.094, -4.65526e-08, 1.79604e-16, -1.8458, 0.0904024, -0.6847)
+mesh = SubResource("ArrayMesh_i4wjg")
 skeleton = NodePath("")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(0.998623, 0, 0.0524757, 0, 1, 0, -0.0524757, 0, 0.998623, 4.12325, 0.0343441, -8.86476)
 slide_on_ceiling = false
 script = ExtResource("8_oochs")
-invert_weapon_sway = true
-WALK_SPEED = 1.3
-SPRINT_SPEED = 4.0
-CROUCH_SPEED = 1.0
+stamina = 10
+stamina_regen = 1
+stamina_use = 1
+WALK_SPEED = 2.0
+SPRINT_SPEED = 5.0
+CROUCH_SPEED = 1.2
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47469, 0)
@@ -1395,6 +1305,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.274091, 0)
 light_energy = 0.58
 light_indirect_energy = 0.0
 light_volumetric_fog_energy = 0.0
+light_specular = 0.4
 light_bake_mode = 1
 omni_range = 1.049
 omni_attenuation = -0.848
@@ -1412,40 +1323,6 @@ grow_vertical = 2
 mouse_filter = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Reticle" type="CenterContainer" parent="Player/UI"]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("13_gocot")
-Dot_Radius = 2.05
-
-[node name="Top" type="Line2D" parent="Player/UI/Reticle"]
-points = PackedVector2Array(0, -5, 0, -20)
-width = 2.0
-script = ExtResource("14_ea0cd")
-
-[node name="Right" type="Line2D" parent="Player/UI/Reticle"]
-points = PackedVector2Array(5, 0, 20, 0)
-width = 2.0
-
-[node name="Bottom" type="Line2D" parent="Player/UI/Reticle"]
-points = PackedVector2Array(0, 5, 0, 20)
-width = 2.0
-
-[node name="Left" type="Line2D" parent="Player/UI/Reticle"]
-points = PackedVector2Array(-5, 0, -20, 0)
-width = 2.0
-
 [node name="FPS" type="Label" parent="Player/UI"]
 layout_mode = 0
 offset_top = -4.14
@@ -1455,40 +1332,4 @@ horizontal_alignment = 2
 script = ExtResource("15_ro2xx")
 color = Color(0.961327, 1.92523e-07, 0.502732, 1)
 Font_Size = 40
-metadata/_edit_use_anchors_ = true
-
-[node name="Film_Grain_Noise" type="TextureRect" parent="Player/UI"]
-visible = false
-modulate = Color(1, 1, 1, 0.105882)
-layout_mode = 0
-offset_left = -170.0
-offset_top = -56.0
-offset_right = 3111.0
-offset_bottom = 1780.0
-texture = SubResource("NoiseTexture2D_rktlo")
-stretch_mode = 6
-script = ExtResource("17_mftna")
-
-[node name="TextureRect3" type="TextureRect" parent="Player/UI"]
-self_modulate = Color(0, 0, 0, 0.34902)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("34_afqhu")
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect4" type="TextureRect" parent="Player/UI"]
-self_modulate = Color(0, 0, 0, 0.67451)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.0416667
-anchor_top = -0.0401056
-anchor_right = 1.03333
-anchor_bottom = 1.06712
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("34_afqhu")
 metadata/_edit_use_anchors_ = true
