@@ -1,17 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://db2h3t17k37pe"]
+[gd_scene load_steps=14 format=3 uid="uid://db2h3t17k37pe"]
 
-[ext_resource type="Texture2D" uid="uid://dpvrqepybkp5h" path="res://Materials/thomas-stewart-cyber-ground-metalic.jpg" id="1_0duqc"]
-[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_1d73w"]
+[ext_resource type="Script" uid="uid://c3hf666ksobaw" path="res://Scripts/Player.gd" id="1_1d73w"]
 [ext_resource type="Texture2D" uid="uid://6h16468y48id" path="res://Asset/Skybox/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="2_do6lf"]
-[ext_resource type="Script" path="res://Scripts/sway.gd" id="4_777lv"]
-[ext_resource type="PackedScene" uid="uid://dsnvw30f4770b" path="res://Scenes/fp_arms.tscn" id="4_me3bo"]
-[ext_resource type="Script" path="res://Scripts/reticle.gd" id="6_aoo1y"]
-[ext_resource type="Script" path="res://Scripts/top.gd" id="7_5j5va"]
-[ext_resource type="Script" path="res://Scripts/fps.gd" id="8_goenx"]
+[ext_resource type="Script" uid="uid://d4cgvfcli1g4y" path="res://Scripts/sway.gd" id="4_777lv"]
+[ext_resource type="Script" uid="uid://bkjvfcp8y2see" path="res://Scripts/reticle.gd" id="6_aoo1y"]
+[ext_resource type="Script" uid="uid://by7sw3mtcp6ti" path="res://Scripts/top.gd" id="7_5j5va"]
+[ext_resource type="Script" uid="uid://b7gr6k4u6myw1" path="res://Scripts/fps.gd" id="8_goenx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sroov"]
 albedo_color = Color(0.617455, 0.617455, 0.617455, 1)
-albedo_texture = ExtResource("1_0duqc")
 metallic = 0.63
 uv1_triplanar = true
 
@@ -37,6 +34,9 @@ volumetric_fog_detail_spread = 6.0
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_xc2g5"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wydro"]
+
+[sub_resource type="Resource" id="Resource_45d1s"]
+metadata/__load_path__ = "res://Scenes/fp_arms.tscn"
 
 [node name="World" type="Node3D"]
 
@@ -103,7 +103,7 @@ swayRight = Vector3(0, -0.2, 0)
 swayUp = Vector3(-0.2, 0, 0)
 swayDown = Vector3(0.2, 0, 0)
 
-[node name="Arms" parent="Player/neck/Head/eyes/Camera3D/sway" instance=ExtResource("4_me3bo")]
+[node name="Arms" parent="Player/neck/Head/eyes/Camera3D/sway"]
 
 [node name="UI" type="Control" parent="Player"]
 layout_mode = 3

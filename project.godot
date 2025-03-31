@@ -12,7 +12,7 @@ config_version=5
 
 config/name="someting_horror"
 run/main_scene="res://Scenes/GAME.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -24,6 +24,10 @@ Global="*res://Scripts/Global.gd"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
+
+[dotnet]
+
+project/assembly_name="someting_horror"
 
 [input]
 
@@ -91,13 +95,16 @@ zoom_out={
 [physics]
 
 common/physics_ticks_per_second=144
+3d/physics_engine="Jolt Physics"
 
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
 camera/depth_of_field/depth_of_field_bokeh_quality=0
 scaling_3d/mode=2
-scaling_3d/scale=0.65
+scaling_3d/mode.ios=2
+scaling_3d/mode.macos=2
+scaling_3d/scale=0.55
 scaling_3d/fsr_sharpness=0.3
 environment/volumetric_fog/use_filter=0
 anti_aliasing/quality/screen_space_aa=1

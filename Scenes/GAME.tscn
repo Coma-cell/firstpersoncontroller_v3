@@ -1,18 +1,18 @@
 [gd_scene load_steps=91 format=4 uid="uid://cxr3cvtsbq3wc"]
 
-[ext_resource type="Script" path="res://Scenes/game_graphics.gd" id="1_1h5yw"]
+[ext_resource type="Script" uid="uid://bxnxqadheoqw2" path="res://Scenes/game_graphics.gd" id="1_1h5yw"]
 [ext_resource type="Texture2D" uid="uid://6h16468y48id" path="res://Asset/Skybox/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="7_xmlgw"]
-[ext_resource type="Script" path="res://Scripts/Player.gd" id="8_oochs"]
-[ext_resource type="Script" path="res://Scripts/sway.gd" id="9_n43u0"]
+[ext_resource type="Script" uid="uid://c3hf666ksobaw" path="res://Scripts/Player.gd" id="8_oochs"]
+[ext_resource type="Script" uid="uid://d4cgvfcli1g4y" path="res://Scripts/sway.gd" id="9_n43u0"]
 [ext_resource type="Texture2D" uid="uid://wit6wbgvycv0" path="res://Materials/Cement floor/concrete_0010_color_4k.jpg" id="11_xa55m"]
 [ext_resource type="Texture2D" uid="uid://rdvsj0b3ax48" path="res://Materials/Cement floor/concrete_0010_ao_4k.jpg" id="12_heath"]
 [ext_resource type="Texture2D" uid="uid://deru52obof0hp" path="res://Models/fence/chain_link_fence_low_poly_version_0.png" id="13_2exly"]
 [ext_resource type="Texture2D" uid="uid://davlicvthyd2d" path="res://Materials/Cement floor/concrete_0010_height_4k.png" id="13_w8ssh"]
 [ext_resource type="Texture2D" uid="uid://bupoudbpru6k4" path="res://Models/fence/chain_link_fence_low_poly_version_1.png" id="14_e61hh"]
 [ext_resource type="Texture2D" uid="uid://jp33wegmxgm8" path="res://Materials/Cement floor/concrete_0010_normal_opengl_4k.png" id="14_nc85o"]
-[ext_resource type="Shader" path="res://Scenes/frosty_glass.gdshader" id="14_nexvu"]
+[ext_resource type="Shader" uid="uid://bew3j8n6jlw0s" path="res://Scenes/frosty_glass.gdshader" id="14_nexvu"]
 [ext_resource type="Texture2D" uid="uid://cjtlfqknojrx4" path="res://Models/fence/chain_link_fence_low_poly_version_2.png" id="15_655ht"]
-[ext_resource type="Script" path="res://Scripts/fps.gd" id="15_ro2xx"]
+[ext_resource type="Script" uid="uid://b7gr6k4u6myw1" path="res://Scripts/fps.gd" id="15_ro2xx"]
 [ext_resource type="Texture2D" uid="uid://7l6kdw23l0lv" path="res://Materials/Cement floor/concrete_0010_roughness_4k.jpg" id="15_wte1w"]
 [ext_resource type="Texture2D" uid="uid://dh3kaquiyl2vp" path="res://Materials/wet_ground/ground_0001_color_1k.jpg" id="16_1god0"]
 [ext_resource type="Texture2D" uid="uid://8fc6bg81s0b7" path="res://Models/fence/chain_link_fence_low_poly_version_3.png" id="16_wc6in"]
@@ -25,12 +25,12 @@
 [ext_resource type="Texture2D" uid="uid://c0cnnbq3ok1ye" path="res://Models/Arm/fp_arms_2.png" id="19_vomj0"]
 [ext_resource type="Texture2D" uid="uid://b36rkmghtaort" path="res://Materials/wet_ground/ground_0001_normal_opengl_1k.png" id="19_xctiy"]
 [ext_resource type="Texture2D" uid="uid://brkqms0cus7j4" path="res://Materials/wet_ground/ground_0001_roughness_1k.jpg" id="20_bf23h"]
-[ext_resource type="Shader" path="res://Scenes/Water.gdshader" id="20_btx2h"]
+[ext_resource type="Shader" uid="uid://dxjh7q0pfemw" path="res://Scenes/Water.gdshader" id="20_btx2h"]
 [ext_resource type="PackedScene" uid="uid://30rtds7l7xin" path="res://Models/Flash_light/flashlight.glb" id="21_64fhk"]
 [ext_resource type="Texture2D" uid="uid://ce87ecyjwagkw" path="res://Asset/foliage/grass_project_plants_0003_color_1k-plants_0003_opacity_1k.png" id="21_gl032"]
 [ext_resource type="Texture2D" uid="uid://dcceae8n1bnch" path="res://Asset/foliage/grass_project_plants_0003_roughness_1k.png" id="22_kg134"]
 [ext_resource type="Texture2D" uid="uid://bt0mqkksmcn1a" path="res://Asset/foliage/grass_project_plants_0003_normal_opengl_1k.png" id="23_1j8tf"]
-[ext_resource type="Script" path="res://Scenes/arms.gd" id="23_hupdc"]
+[ext_resource type="Script" uid="uid://bgl3ndmu1150c" path="res://Scenes/arms.gd" id="23_hupdc"]
 [ext_resource type="Texture2D" uid="uid://cqrglx67mdi8" path="res://Asset/flashlight_projertor/t_flashlightpattern.png" id="28_dkoab"]
 [ext_resource type="AnimationLibrary" uid="uid://ckph0548qo1yu" path="res://Asset/fps.res" id="28_nsf1i"]
 
@@ -108,17 +108,17 @@ noise = SubResource("FastNoiseLite_q6s7l")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ijp6o"]
 render_priority = 0
 shader = ExtResource("20_btx2h")
+shader_parameter/water_normal_noise = SubResource("NoiseTexture2D_5mq1b")
 shader_parameter/water_color = Color(0.158388, 0.256097, 0.241549, 1)
 shader_parameter/time_scale = 1.5
 shader_parameter/UV_scale = 5.25
+shader_parameter/sun_highlight = SubResource("NoiseTexture2D_00hyx")
 shader_parameter/abberation_r = Vector2(0, 1)
 shader_parameter/abberation_g = Vector2(0, 1)
 shader_parameter/abberation_b = Vector2(0, 1)
 shader_parameter/time_scale_highlight = 0.025
 shader_parameter/normal = 0.9
 shader_parameter/roughness = 0.2
-shader_parameter/water_normal_noise = SubResource("NoiseTexture2D_5mq1b")
-shader_parameter/sun_highlight = SubResource("NoiseTexture2D_00hyx")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kxytw"]
 albedo_color = Color(0.0954497, 0.246474, 0.286658, 0.196078)
@@ -218,8 +218,8 @@ noise = SubResource("FastNoiseLite_2ls5f")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nj0lk"]
 render_priority = 0
 shader = ExtResource("14_nexvu")
-shader_parameter/distortion_size = 0.025
 shader_parameter/glass_normal = SubResource("NoiseTexture2D_bplgq")
+shader_parameter/distortion_size = 0.025
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r64v2"]
 
@@ -709,7 +709,7 @@ tracks/0/keys = PackedFloat32Array(0, 1, -0.0186525, 0.125969, -5.36442e-10)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m0wj5"]
 _data = {
-"RESET": SubResource("Animation_qdbnj")
+&"RESET": SubResource("Animation_qdbnj")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cdglj"]
@@ -815,6 +815,7 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_kmqag")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/tunnel/floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46943e-18, 0, 0.000453138)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/tunnel/floor/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ydovo")
@@ -863,7 +864,7 @@ mesh = SubResource("ArrayMesh_i4wjg")
 skeleton = NodePath("")
 
 [node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(0.998623, 0, 0.0524757, 0, 1, 0, -0.0524757, 0, 0.998623, 4.12325, 0.0343441, -8.86476)
+transform = Transform3D(0.560379, 0, 0.828237, 0, 1, 0, -0.828237, 0, 0.560379, 4.12325, 0.0343441, -8.86476)
 slide_on_ceiling = false
 script = ExtResource("8_oochs")
 stamina = 10
@@ -1283,16 +1284,17 @@ light_energy = 60.245
 light_indirect_energy = 1.18
 light_volumetric_fog_energy = 0.379
 light_projector = ExtResource("28_dkoab")
+light_cull_mask = 4294967263
 shadow_enabled = true
-distance_fade_enabled = true
-spot_range = 32.088
+shadow_caster_mask = 4294967294
+spot_range = 9.482
 spot_attenuation = 1.65
 spot_angle = 10.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Player/neck/Head/eyes/Camera3D/sway/Arms/Skeleton3D"]
 libraries = {
-"": SubResource("AnimationLibrary_m0wj5"),
-"fps": ExtResource("28_nsf1i")
+&"": SubResource("AnimationLibrary_m0wj5"),
+&"fps": ExtResource("28_nsf1i")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="Player/neck/Head/eyes/Camera3D/sway/Arms/Skeleton3D"]
