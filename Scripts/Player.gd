@@ -7,9 +7,9 @@ extends CharacterBody3D
 @export var invert_weapon_sway: bool = false
 
 # Stamina
-@export var stamina = 100
-@export var stamina_regen = 5
-@export var stamina_use = 10
+@export var stamina = 10
+@export var stamina_regen = 1
+@export var stamina_use = 1
 
 var speed
 @export var WALK_SPEED = 5.0
@@ -93,6 +93,7 @@ func _physics_process(delta):
 		velocity.y -= gravity * delta
 		sliding = false
 		crouching = false
+
 
 	# Handle Jump
 	if Input.is_action_just_pressed("jump") and is_on_floor() and !crouching and !sliding:
@@ -201,8 +202,9 @@ func _physics_process(delta):
 	# Stamina handling
 	if sprinting and stamina > 0:
 		stamina -= stamina_use * delta  # Decrease stamina while sprinting
+
 	elif !sprinting and stamina < 10:
-		stamina += stamina_regen * delta  # Regenerate stamina when not sprinting
+		stamina += stamina_regen * delta # Regenerate stamina when not sprinting
 
 	# Prevent sprinting when stamina reaches 0
 	if stamina <= 0:
