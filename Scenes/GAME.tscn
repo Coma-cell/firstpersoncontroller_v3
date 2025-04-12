@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=4 uid="uid://cxr3cvtsbq3wc"]
+[gd_scene load_steps=67 format=4 uid="uid://cxr3cvtsbq3wc"]
 
 [ext_resource type="Script" uid="uid://bxnxqadheoqw2" path="res://Scenes/game_graphics.gd" id="1_1h5yw"]
 [ext_resource type="Texture2D" uid="uid://wit6wbgvycv0" path="res://Materials/Cement floor/concrete_0010_color_4k.jpg" id="4_kck8f"]
@@ -21,7 +21,9 @@
 [ext_resource type="Texture2D" uid="uid://c0cnnbq3ok1ye" path="res://Models/Arm/fp_arms_2.png" id="19_vomj0"]
 [ext_resource type="Shader" uid="uid://dxjh7q0pfemw" path="res://Scenes/Water.gdshader" id="20_btx2h"]
 [ext_resource type="PackedScene" uid="uid://30rtds7l7xin" path="res://Models/Flash_light/flashlight.glb" id="21_64fhk"]
+[ext_resource type="FontFile" uid="uid://clkacc51m6485" path="res://Asset/font/VCR_OSD_MONO_1.001.ttf" id="23_a2lwh"]
 [ext_resource type="Script" uid="uid://bgl3ndmu1150c" path="res://Scenes/arms.gd" id="23_hupdc"]
+[ext_resource type="Script" uid="uid://civsei2i8viqq" path="res://Scenes/recording time.gd" id="24_q6i7l"]
 [ext_resource type="Texture2D" uid="uid://cqrglx67mdi8" path="res://Asset/flashlight_projertor/t_flashlightpattern.png" id="28_dkoab"]
 [ext_resource type="AnimationLibrary" uid="uid://ckph0548qo1yu" path="res://Asset/fps.res" id="28_nsf1i"]
 
@@ -503,6 +505,11 @@ nodes/Animation/position = Vector2(-122, 85)
 nodes/idle_to_walk/node = SubResource("AnimationNodeBlend2_7usah")
 nodes/idle_to_walk/position = Vector2(120, 40)
 node_connections = [&"idle_to_walk", 0, &"Animation", &"idle_to_walk", 1, &"Animation 2", &"output", 0, &"idle_to_walk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_q6i7l"]
+font = ExtResource("23_a2lwh")
+font_size = 86
+font_color = Color(0.996946, 3.39322e-06, 1.92523e-07, 1)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_axihb"]
 shader = ExtResource("18_axihb")
@@ -1044,7 +1051,12 @@ mouse_filter = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="FPS" type="Label" parent="Player/hud"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.0787484
+anchor_right = 0.9375
+anchor_bottom = 0.0884682
 offset_top = -4.14
 offset_right = 40.0
 offset_bottom = 1267.5
@@ -1052,6 +1064,22 @@ horizontal_alignment = 2
 script = ExtResource("15_ro2xx")
 color = Color(0.961327, 1.92523e-07, 0.502732, 1)
 Font_Size = 40
+metadata/_edit_use_anchors_ = true
+
+[node name="rec" type="Label" parent="Player/hud"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0095467
+anchor_right = 0.0791667
+anchor_bottom = 0.000393192
+offset_top = -4.14
+offset_right = 40.0
+offset_bottom = 1267.5
+text = "REC"
+label_settings = SubResource("LabelSettings_q6i7l")
+horizontal_alignment = 2
+uppercase = true
+script = ExtResource("24_q6i7l")
 metadata/_edit_use_anchors_ = true
 
 [node name="ProgressBar" type="ProgressBar" parent="Player/hud"]
